@@ -8,7 +8,7 @@ const axios = require("axios");
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -27,7 +27,6 @@ app.post("/ask", async (req, res) => {
       {
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-          "HTTP-Referer": "http://localhost:3000", // Your site or app URL
           "Content-Type": "application/json",
         },
       }
