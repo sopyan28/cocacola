@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f3ef;
+}
+* {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 em {
+    font-style: italic;
+    font-weight: 500;
+  }
+
+.left-align {
+    text-align: left;
+}
+
+
+.footer-bar {
+    position: fixed;       /* Stick to bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4e0cd;
+    color: rgb(195, 10, 10);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Push left & right text apart */
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+}
+

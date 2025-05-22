@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flavor AI Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png" alt="" width="600" height=auto style="padding: 100px;"/>
+  <h2><em>Introducing...</em></h2>
+  <h2>An online mockup of a reimagined Coca-Cola freestyle <br> machine, an new way to drink Coca-Cola, powered by AI. </h2>
+  
+  <div id="clickable-text" style="cursor: pointer;">
+    <h1>Get your <em>custom</em> Coke flavor now!</h1>
+  </div>
+  
+  <script>
+    const text = document.getElementById('clickable-text');
+  
+    text.addEventListener('click', () => {
+      // Change text color to red
+      text.style.color = 'red';
+  
+      // Scroll down 200 pixels smoothly
+      window.scrollBy({ top: 400, behavior: 'smooth' });
+    });
+  </script>
+
+  <div style="padding: 200px">
+    <div id="chat" class="left-align" style="font-size: 30px;" ></div>
+    <input style="font-size: 20px; padding: 15px 30px;" type="text" id="userInput" placeholder="Type your answer..." />
+    <button style="font-size: 20px; padding: 15px 30px;" onclick="sendMessage()">Submit</button>  
+  </div>
+  
+  <div class="footer-bar">
+    <div class="left-text">Management and Marketing - Brand Audit Group Project</div>
+    <div class="right-text">© 2025 Coca Cola AI Powered Flavors</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
